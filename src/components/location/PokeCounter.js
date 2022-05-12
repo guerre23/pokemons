@@ -20,7 +20,7 @@ const PokeCounter = () => {
         
 
           })
-    }, []) 
+    }, [id]) 
 
 
     return(

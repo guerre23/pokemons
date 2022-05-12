@@ -9,14 +9,14 @@ const Pokemon = () => {
     const navigate = useNavigate()
     const [getImg, setGetIdImg] = useState('')
     const [pokeName, setPokeName] = useState('')
-    const [abilities, setAbilities] = useState(2,0)
-    const [slotAbilities, setSlotAbilities] = useState(2,0,1)
+    const [abilities, setAbilities] = useState([2,0])
+    const [slotAbilities, setSlotAbilities] = useState([2,0,1])
     const [heightArr, setHeightArr] = useState([])
     const [weightArr, setWeightArr] = useState([])
     const [getId, setGetId] = useState()
     const [getType, setGetType] = useState()
  
-    const [moves, setMoves] = useState([83,0])
+    const [moves, setMoves] = useState()
     
 
 
@@ -26,14 +26,14 @@ const Pokemon = () => {
                 console.log(res.data)
                 setGetIdImg(res.data.sprites.front_default)
                 setPokeName(res.data.name)
-                setAbilities(res.data.abilities[2,0].ability.name) 
-                setSlotAbilities(res.data.abilities[2,0,1].ability.name)               
+                setAbilities(res.data.abilities[''].ability.name) 
+                setSlotAbilities(res.data.abilities[''].ability.name)               
                 setHeightArr(res.data.height)
                 setWeightArr(res.data.weight)
                 setGetId(res.data.id)
                 setGetType(res.data.types.type.name)
 
-                setMoves(res.data.moves[83,0].move.name)            
+                setMoves(res.data.moves[''].move.name)            
             })
     }, [id])
 
