@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(91, 98, 107);
+}
+
+.trainer{
+    margin-top: 10%;
+    padding-left: 35%;
+    border: 10vh;
+    font-size: calc(10px + 2vmin);
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+img {
+    margin-top: 0%;
+    margin-left: 50%;
+    width: 150px;
+    height: 350px;
+}

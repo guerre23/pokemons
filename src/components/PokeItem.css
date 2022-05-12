@@ -1,0 +1,9 @@
+.stylepok{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1%;
+    border-radius: 4%;
+    background-color: cornsilk;
+
+}

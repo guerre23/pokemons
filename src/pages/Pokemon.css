@@ -1,0 +1,9 @@
+.card{
+    display: flex;
+    text-align: center;
+    background-color: aliceblue;
+    border: 20ch;
+    margin:80px;
+    border-radius: 2px;
+}
+
