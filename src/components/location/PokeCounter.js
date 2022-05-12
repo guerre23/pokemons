@@ -12,21 +12,19 @@ const PokeCounter = () => {
 
 
   
-  /*  useEffect(() => {
+    useEffect(() => {
         getPokeLocation(id)
           .then((res) => {
-            console.log(id)
+            console.log(res.data)
             setGetName(res.data.name)
         
 
           })
-
-    },[]) */
+    }, []) 
 
 
     return(
         <div className={styles.pokeget} >
-            <div>djkfkdkjdf</div>
             <div>name: {getName}</div>
             <button onClick={() => navigate(-1)}>Atras</button>
         </div>

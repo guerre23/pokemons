@@ -56,12 +56,12 @@ const Pokemon = () => {
             <h5>weight: {weightArr}</h5>
 
             {moves} 
-            <div>{}</div>                  
+            <div>{getType}</div>                  
 
             <br/>
             <button onClick={() => navigate(-1)}>Atras</button>
             <br />
-            <Link to={'/pokedex/:id/encounters'}>Encouters</Link>
+            <Link to={`/pokedex/${id}/encounters`}>Encouters</Link>
         </div>
     )
 }

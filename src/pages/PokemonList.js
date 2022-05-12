@@ -5,8 +5,6 @@ import getAllPokemons from "../services/getAllPokemons";
 const PokemonList = () => {
   const [pokeList, setPokeList] = useState([]);
   const [arrOffsetPosition, setArrOffsetPosition] = useState(0);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [pages, setPages] = useState([]);
 
   useEffect(() => {
     getAllPokemons(arrOffsetPosition).then((res) => {
