@@ -8,7 +8,8 @@ const PokeCounter = () => {
 
     const {id} = useParams()
     const navigate = useNavigate()
-    const [getName, setGetName] = useState('')
+    const [allLocation,setAllLocation] = useState()
+    
 
 
   
@@ -16,7 +17,8 @@ const PokeCounter = () => {
         getPokeLocation(id)
           .then((res) => {
             console.log(res.data)
-            setGetName(res.data.name)
+            setAllLocation(res.data[0].location_area.name)
+            
         
 
           })
@@ -25,7 +27,8 @@ const PokeCounter = () => {
 
     return(
         <div className={styles.pokeget} >
-            <div>name: {getName}</div>
+            <div>Location: {allLocation}</div>
+            
             <button onClick={() => navigate(-1)}>Atras</button>
         </div>
 

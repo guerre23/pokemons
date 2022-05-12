@@ -1,0 +1,16 @@
+.card{
+    border-radius: 10px;
+    width: 15cm;
+    height: 10cm;
+    background-color: white;
+    color: black;
+}
+
+.number{
+    display: flex;
+    justify-content: center;
+}
+
+.imgpokemon{
+    margin-left: 25px;
+}

@@ -21,7 +21,7 @@ const Login = () => {
 
     return (
         <div>
-            <h2 className="trainer">Hello trainer !</h2>
+            <h2 className="trainer">Hello trainer!</h2>
             <img className="img" src={img} alt=''/>
             <div className="login">
             <input placeholder="Enter your name to start" onChange={(e) => setUserName(e.target.value)} />

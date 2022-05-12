@@ -1,4 +1,4 @@
-//import './App.css';
+import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import ProtectedPages from './pages/ProtectedPages';
 import Login from './pages/Login';
