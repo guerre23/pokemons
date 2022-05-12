@@ -1,30 +1,32 @@
 import { useEffect, useState } from "react"
-import { useNavigate, } from "react-router-dom"
+import { useNavigate, useParams, } from "react-router-dom"
 import getPokeLocation from "../../services/getPokeLocation"
-import './PokeCounter.css'
+import styles from './PokeCounter.module.css'
 
 
-const PokeCounter = ({Id}) => {
+const PokeCounter = () => {
 
+    const {id} = useParams()
     const navigate = useNavigate()
     const [getName, setGetName] = useState('')
 
 
   
-    useEffect(() => {
-        getPokeLocation(Id)
+  /*  useEffect(() => {
+        getPokeLocation(id)
           .then((res) => {
-            console.log(res.data)
+            console.log(id)
             setGetName(res.data.name)
         
 
           })
 
-    },[]) 
+    },[]) */
 
 
     return(
-        <div>
+        <div className={styles.pokeget} >
+            <div>djkfkdkjdf</div>
             <div>name: {getName}</div>
             <button onClick={() => navigate(-1)}>Atras</button>
         </div>
